@@ -127,7 +127,7 @@
   start: 2025-06-10
   end: 2025-06-17
   hindex: 389
-  sub: CV
+  sub: ['CV']
   note: Mandatory paper registration deadline on November 07, 2023. More info <a href='https://cvpr.thecvf.com/Conferences/2025'>here</a>.
 
 - title: NAACL
@@ -992,7 +992,7 @@
   start: 2024-06-17
   end: 2024-06-21
   hindex: 389
-  sub: CV
+  sub: ['CV']
   note: Mandatory paper registration deadline on November 03, 2023 and optional supplementary material deadline on November 26, 2023. More info <a href='https://cvpr.thecvf.com/Conferences/2024'>here</a>.
 
 
@@ -2293,7 +2293,7 @@
   start: 2022-06-17
   end: 2022-06-23
   hindex: 389
-  sub: CV
+  sub: ['CV']
 
 - title: L4DC
   year: 2022
