@@ -1,12 +1,12 @@
 title: AI Conference Deadlines
 description: Countdowns to top CV/NLP/ML/Robotics/AI conference deadlines
-author: Abhishek Das
+author: Ge Yang
 
-domain: "aideadlin.es"
+domain: "fortyfive-ai.github.io/ai-deadlines"
 baseurl: ""
 
-twitter_hashtag: machinelearning
-github_username: paperswithcode
+twitter_hashtag: episodeyang
+github_username: fortyfive-ai
 github_repo: ai-deadlines
 
 markdown: kramdown
