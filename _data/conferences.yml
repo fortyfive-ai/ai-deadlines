@@ -12,7 +12,8 @@
   categories:
     - ML
     - AI
-  note: "Abstract due Sept 19, 2025 AoE; full paper by Sept 24 AoE" # :contentReference[oaicite:1]{index=1}
+  sub: ['ML', 'AP', 'RO', 'CV', 'NLP', 'SP']
+  note: "Abstract due Sept 19 2025 AoE; full paper due Sept 24 AoE" # :contentReference[oaicite:1]{index=1}
 
 - title: ICRA
   year: 2026
@@ -28,7 +29,8 @@
   categories:
     - Robotics
     - Automation
-  note: "Paper deadline Sept 15, 2025 23:59 PST" # :contentReference[oaicite:2]{index=2}
+  sub: ['RO', 'AP']
+  note: "Paper deadline Sept 15 2025 23:59 PST" # :contentReference[oaicite:2]{index=2}
 
 - title: RSS
   year: 2026
@@ -37,14 +39,15 @@
   abstract_deadline: '2026-01-17 23:59:59'
   deadline: '2026-01-24 23:59:59'
   timezone: AoE
-  place: TBD
-  date: TBD (typically June 2026)
-  start: TBD
-  end: TBD
+  place: Bournemouth, UK
+  date: September 7–10, 2026
+  start: 2026-09-07
+  end: 2026-09-10
   categories:
     - Robotics
     - Systems
-  note: "Abstract/title due Jan 17 2026 AoE; full paper by Jan 24 AoE" # :contentReference[oaicite:3]{index=3}
+  sub: ['RO', 'AP']
+  note: "Abstract due Jan 17 2026 AoE; full paper due Jan 24 AoE" # :contentReference[oaicite:3]{index=3}
 
 - title: ICML
   year: 2026
@@ -60,7 +63,8 @@
   categories:
     - ML
     - AI
-  note: "Full paper deadline Jan 30 2026 AoE; conference held in July" # :contentReference[oaicite:4]{index=4}
+  sub: ['ML', 'CV', 'NLP', 'SP']
+  note: "Full paper deadline Jan 30 2026 AoE; conference in July" # :contentReference[oaicite:4]{index=4}
 
 - title: IROS
   year: 2026
@@ -76,7 +80,8 @@
   categories:
     - Robotics
     - AI
-  note: "Paper deadline likely Mar 2 2026 based on pattern" # (estimated)
+  sub: ['RO', 'AP']
+  note: "Paper deadline likely Mar 2 2026 based on pattern"
 
 - title: AISTATS
   year: 2025
@@ -86,15 +91,15 @@
   deadline: '2024-10-10 23:59:59'
   timezone: UTC-12
   place: Phuket, Thailand
-  date: May 3–5, 2025
+  date: May 3–5, 2025
   start: 2025-05-03
   end: 2025-05-05
   hindex: 100
   categories:
     - ML
     - Statistics
-  note: "Abstract deadline on October 3, 2024"
-
+  sub: ['ML']
+  note: "Abstract deadline on October 3, 2024"
 - title: AISTATS
   year: 2025
   id: aistats25
