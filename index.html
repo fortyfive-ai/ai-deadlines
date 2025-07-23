@@ -223,14 +223,22 @@
         {% endfor %}
 
         // Sort coming_confs and past_confs - most recent year first, then by deadline
-        $("#coming_confs .ConfItem").sort(function (a, b) {
-          var yearA = parseInt($(a).attr('year'));
-          var yearB = parseInt($(b).attr('year'));
-          if (yearA !== yearB) {
-            return yearB - yearA; // Most recent year first
-          }
-          return $(a).attr('diff') - $(b).attr('diff'); // Then by deadline (earliest first)
-        }).appendTo($("#coming_confs"));
+        setTimeout(function() {
+          $("#coming_confs .ConfItem").sort(function (a, b) {
+            var yearA = parseInt($(a).attr('year')) || 0;
+            var yearB = parseInt($(b).attr('year')) || 0;
+            
+            // First sort by year (most recent first)
+            if (yearA !== yearB) {
+              return yearB - yearA; // 2026 before 2025
+            }
+            
+            // Then sort by deadline within same year (earliest deadline first)
+            var diffA = parseInt($(a).attr('diff')) || 0;
+            var diffB = parseInt($(b).attr('diff')) || 0;
+            return diffA - diffB;
+          }).appendTo($("#coming_confs"));
+        }, 100);
 
         $("#sort-order-checkbox input").on("click", function() {
           if ($("#sort-order-checkbox input").is(":checked")) {
