@@ -212,6 +212,7 @@
 
           $('#{{conf.id}}').attr("diff", diff)
           $('#{{conf.id}}').attr("year", {{conf.year}})
+          $('#{{conf.id}}').attr("deadline-date", "{{conf.deadline}}")
           if (diff > 0) {
             $('#{{conf.id}}').addClass('past');
             $('#{{conf.id}}').appendTo($("#past_confs"))
@@ -233,7 +234,14 @@
               return yearB - yearA; // 2026 before 2025
             }
             
-            // Then sort by deadline within same year (earliest deadline first)
+            // Then sort by actual deadline date (earliest deadline first)
+            var deadlineA = $(a).attr('deadline-date');
+            var deadlineB = $(b).attr('deadline-date');
+            if (deadlineA && deadlineB) {
+              return new Date(deadlineA) - new Date(deadlineB);
+            }
+            
+            // Fallback to diff if deadline dates not available
             var diffA = parseInt($(a).attr('diff')) || 0;
             var diffB = parseInt($(b).attr('diff')) || 0;
             return diffA - diffB;
