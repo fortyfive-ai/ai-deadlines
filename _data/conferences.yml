@@ -13,7 +13,7 @@
     - ML
     - AI
   sub: ['ML', 'AP', 'RO', 'CV', 'NLP', 'SP']
-  note: "Abstract due Sept 19 2025 AoE; full paper due Sept 24 AoE" # :contentReference[oaicite:1]{index=1}
+  note: "Abstract due Sept 19 2025 AoE; full paper due Sept 24 AoE" # :contentReference[oaicite:1]{index=1}
 
 - title: ICRA
   year: 2026
@@ -30,7 +30,41 @@
     - Robotics
     - Automation
   sub: ['RO', 'AP']
-  note: "Paper deadline Sept 15 2025 23:59 PST" # :contentReference[oaicite:2]{index=2}
+  note: "Paper deadline Sept 15 2025 23:59 PST" # :contentReference[oaicite:2]{index=2}
+
+- title: CVPR
+  year: 2026
+  id: cvpr26
+  link: https://www.computer.org/cvpr
+  abstract_deadline: null
+  deadline: '2025-11-14 23:59:59'
+  timezone: PST
+  place: Washington, United States
+  date: June 6–12, 2026
+  start: 2026-06-06
+  end: 2026-06-12
+  categories:
+    - Computer Vision
+    - ML
+  sub: ['CV', 'ML']
+  note: "Paper submission deadline Nov 14, 2025 23:59 PST; conference Jun 6–12 2026"
+
+- title: ECCV
+  year: 2026
+  id: eccv26
+  link: https://eccv2026.org
+  abstract_deadline: null
+  deadline: '2026-03-06 11:00:00'
+  timezone: UTC
+  place: Malmö, Sweden
+  date: September 8–13, 2026
+  start: 2026-09-08
+  end: 2026-09-13
+  categories:
+    - Computer Vision
+    - ML
+  sub: ['CV', 'ML']
+  note: "Paper submission deadline Mar 6, 2026 11:00 UTC; conference Sep 8–13 2026 in Malmö"
 
 - title: RSS
   year: 2026
@@ -47,7 +81,7 @@
     - Robotics
     - Systems
   sub: ['RO', 'AP']
-  note: "Abstract due Jan 17 2026 AoE; full paper due Jan 24 AoE" # :contentReference[oaicite:3]{index=3}
+  note: "Abstract due Jan 17 2026 AoE; full paper due Jan 24 AoE"
 
 - title: ICML
   year: 2026
@@ -64,7 +98,7 @@
     - ML
     - AI
   sub: ['ML', 'CV', 'NLP', 'SP']
-  note: "Full paper deadline Jan 30 2026 AoE; conference in July" # :contentReference[oaicite:4]{index=4}
+  note: "Full paper deadline Jan 30 2026 AoE; conference in July" # :contentReference[oaicite:4]{index=4}
 
 - title: IROS
   year: 2026
@@ -81,7 +115,7 @@
     - Robotics
     - AI
   sub: ['RO', 'AP']
-  note: "Paper deadline likely Mar 2 2026 based on pattern"
+  note: "Paper deadline likely Mar 2 2026 based on pattern"
 
 - title: AISTATS
   year: 2025
