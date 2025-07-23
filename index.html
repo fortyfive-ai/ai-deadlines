@@ -211,6 +211,7 @@
           diff = today.diff(confDate);
 
           $('#{{conf.id}}').attr("diff", diff)
+          $('#{{conf.id}}').attr("year", {{conf.year}})
           if (diff > 0) {
             $('#{{conf.id}}').addClass('past');
             $('#{{conf.id}}').appendTo($("#past_confs"))
@@ -221,9 +222,14 @@
         {% endif %}
         {% endfor %}
 
-        // Sort coming_confs and past_confs
+        // Sort coming_confs and past_confs - most recent year first, then by deadline
         $("#coming_confs .ConfItem").sort(function (a, b) {
-          return $(a).attr('diff') - $(b).attr('diff');
+          var yearA = parseInt($(a).attr('year'));
+          var yearB = parseInt($(b).attr('year'));
+          if (yearA !== yearB) {
+            return yearB - yearA; // Most recent year first
+          }
+          return $(a).attr('diff') - $(b).attr('diff'); // Then by deadline (earliest first)
         }).appendTo($("#coming_confs"));
 
         $("#sort-order-checkbox input").on("click", function() {
